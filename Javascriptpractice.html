@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>MowHogz</title>
+        <script>
+            function RowPrinter(lister){
+                var row = " ";
+                
+                
+                
+                for(i=0;i<3;i++){
+                    row += " ";
+                    row += lister[i].toString();
+                }
+                row += " |";
+                for(i=3;i<6;i++){
+                    row += " ";
+                    row += lister[i].toString();
+                }
+                row += " |";
+                for(i=6;i<9;i++){
+                    row += " ";
+                    row += lister[i].toString();
+                }
+                return row;
+                
+            }
+            function Printer(matrix){
+                var text = "";
+                
+                for(i=0;i < 3;i++){
+                    text += "";
+                    document.write(i);
+                    //document.write(RowPrinter(matrix[i]));
+                }
+                document.write(text);
+            }
+        
+        </script>
+    </head>
+    <body>
+        <script>
+               
+                //var lister = [0,3,9,0,8,0,1,7,0];
+                var matrix = [[0,3,9,0,8,0,1,7,0],[8,0,0,0,0,0,6,0,0],[2,4,0,6,7,0,0,0,0],[0,0,0,9,0,0,7,0,3],[0,0,0,0,2,0,0,0,0],[4,0,8,0,0,5,0,0,0],[0,0,0,0,5,1,0,8,6],[0,0,6,0,0,0,0,0,7],[0,9,5,0,6,0,4,3,0]];
+                //RowPrinter(lister);
+                Printer(matrix);
+                
+        </script>
+    </body>
+</html>
+
